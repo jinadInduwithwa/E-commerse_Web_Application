@@ -1,0 +1,91 @@
+/* import google font - Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Libre+Baskerville&family=Nunito:wght@200&family=Poppins:wght@200;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+/* ------------------------  header style ----------------------------------*/
+/* navigation bar style */
+
+header .navigationBar{
+    background-color: #090909;
+    display: flex;
+    flex-direction: row;
+    padding: 2px 2rem; /* rem = 16px*/
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+header .navigationBar .listItem{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2rem;
+    font-size: 15px;
+}
+/* logo style */
+header .navigationBar .logoIntro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header .navigationBar .storeMoto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+}
+header .navigationBar .StoreName{
+    font-size: 15px;
+}
+header .navigationBar .logo{
+    width: 50px;
+}
+
+header .navigationBar .listItem,.navButtons{
+    font-size: 13px;
+}
+
+/* list item style */
+header .navigationBar a{
+    text-decoration: none;
+}
+header .navigationBar .listItem a{
+    color: #B2B2B2;
+}
+header .navigationBar .listItem a:hover{
+    color: white;
+}
+header .navigationBar .listItem a:active{
+    color:#FFA559;
+}
+header .navigationBar .StoreName a, .navButtons a{
+    color: white;
+}
+
+/* button style */
+header .navigationBar .navButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+header .navigationBar .navButtons a i{
+    font-size: 20px;
+    color: #B2B2B2;
+}
+header .navigationBar .navButtons .navigater:hover{
+    color: #FF6000;
+}
+header .navigationBar .navButtons .navigater:active{
+    transform: translateY(4px);
+}
+.log_out_btn{
+    padding: 10px;
+    color: #FFA559;
+}
+
+
+
+/* -----------------------------------------------------------------------------------*/

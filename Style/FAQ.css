@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.FAQContainer{
+    background-color:#111111;
+    height: 100vh;
+}
+.FAQContainer .question_answer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100px;
+    
+}
+.FAQContainer .question_answer .question{
+    height: 50px;
+}
+.FAQContainer .question_answer .answer{
+    padding-top: 10PX;
+}
+
+.FAQContainer .question_answer p{
+    margin: 10px 40px;
+    color:aliceblue;
+}
+.FAQContainer .question_answer .que{
+    padding-top: 40px;
+    font-size: 30px;
+}
+.FAQContainer .question_answer .ans{
+    font-size: 20px;
+}
+.FAQContainer .question_answer p i{
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #CD5C08;
+}

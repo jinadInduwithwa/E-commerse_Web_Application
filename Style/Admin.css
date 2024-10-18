@@ -1,0 +1,555 @@
+/* import google font - Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Libre+Baskerville&family=Nunito:wght@200&family=Poppins:wght@200;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+    margin: 0;
+    background-color: white;
+}
+.adminTitle{
+    background-color: #A1CCD1;
+    color: white;
+    margin: 50px 20px;
+    border-radius: 5px;
+}
+.adminTitle p{
+    font-size: 25px;
+    padding: 5px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/*------------------------------Admin.manageUsers style--------------------------------*/
+.manageUserContainer{
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.manageUserContainer .usersTable{
+    border-collapse: collapse;
+    min-width: 1200px;
+    margin: 25px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+.manageUserContainer .usersTable thead tr{
+    background-color: #2E97A7 ;
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    font-weight:bold;
+}
+.manageUserContainer .usersTable th, .usersTable td{
+    padding: 12px 15px;
+}
+.manageUserContainer .usersTable tbody tr{
+    border-bottom: 1px solid #dddd;
+    font-size: 0.9rem;
+    color: black;
+}
+.manageUserContainer .usersTable tbody tr td a{
+    text-decoration: none;
+ }
+.manageUserContainer .usersTable tbody tr td a i{
+    color: #73777B;
+    font-size: 20px;
+    padding-left: 25px;
+ }
+.manageUserContainer .usersTable tbody tr td a i:hover{
+    color:#E55604;
+ }
+
+.manageUserContainer .usersTable tbody tr:hover{
+    color: #2E97A7;
+    cursor: pointer; 
+}
+.manageUserContainer .usersTable tbody tr:nth-of-type(even){
+    background-color: #EEEEEE;
+}
+.manageUserContainer .usersTable tbody tr:last-of-type{
+    border-bottom: 2px solid #2E97A7;
+}
+/*-------------------------------------------------------------------------------------*/
+
+/*------------------------------Admin.Dashbord style--------------------------------*/
+.dashbordContainer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.dashbordContainer .dashbordCard{
+    width:300px;
+    height: 150px;
+    background-color: #2E97A7;
+    border-radius: 20px;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    box-shadow: 5px 5px 10px #B4B4B3;
+}
+.dashbordContainer .dashbordCard:hover{
+    background-color: #E55604;
+    
+}
+.dashbordContainer .dashbordCard i{
+    font-size: 35px;
+    color: #dddd;
+}
+.dashbordContainer .dashbordCard .title{
+    font-size: 15px;
+    color: #dddd;
+}
+.dashbordContainer .dashbordCard .text{
+    font-size: 35px;
+    color: #EEEEEE;
+}
+/*-------------------------------------------------------------------------------------*/
+
+/*------------------------------Admin.Category style--------------------------------*/
+
+.CategoryContainer{
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: #7D7C7C;
+    padding: 10px 0;
+}
+.CategoryContainer .insertCategory form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    min-width: 1000px
+}
+.CategoryContainer .insertCategory form input{
+    margin: 5px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid #2E97A7;
+    
+}
+.CategoryContainer .insertCategory label{
+    font-size: 25px;
+}
+.CategoryContainer .insertCategory form label{
+    margin: 5px;
+    height: 30px;
+    font-size: 15px;
+}
+.CategoryContainer .insertCategory form input::placeholder{
+    padding: 0 10px;
+}
+.CategoryContainer .insertCategory form .submitBtn{
+   background-color: #2E97A7;
+   border: none;
+   color: white;  
+   margin-top: 30px;
+}
+.CategoryContainer .insertCategory form input:hover{
+    border-bottom: 2px solid #E55604;
+}
+.CategoryContainer .insertCategory form .submitBtn:hover{
+    background-color: #E55604;
+    border: none;
+    color: white;  
+ }
+ .CategoryContainer .insertCategory form .submitBtn:active{
+    transform: translateY(4px);
+ }
+
+
+
+.ViewCategory{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ViewCategory .categoryTable{
+    border-collapse: collapse;
+    min-width: 1200px;
+    margin: 25px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+.ViewCategory .categoryTable thead tr{
+    background-color: #2E97A7 ;
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    font-weight:bold;
+}
+.ViewCategory .categoryTable th, .usersTable td{
+    padding: 12px 15px;
+}
+.ViewCategory .categoryTable tbody tr{
+    border-bottom: 1px solid #dddd;
+    font-size: 0.9rem;
+    color: black;
+}
+.ViewCategory .categoryTable tbody tr td{
+    padding: 20px 20px;
+}
+.ViewCategory .categoryTable tbody tr td a{
+    text-decoration: none;
+}
+.ViewCategory .categoryTable tbody tr td a i{
+    color: #7D7C7C;
+    text-align: center;
+    font-size: 20px;
+}
+.ViewCategory .categoryTable tbody tr td a i:hover{
+    color: #E55604;
+}
+
+.ViewCategory .categoryTable tbody tr:hover{
+    color: #2E97A7;
+    cursor: pointer; 
+}
+.ViewCategory .categoryTable tbody tr:nth-of-type(even){
+    background-color: #EEEEEE;
+}
+.ViewCategory .categoryTable tbody tr:last-of-type{
+    border-bottom: 2px solid #2E97A7;
+}
+
+/*------------------------------Admin.Category.Edit style--------------------------------*/
+
+.EditCategoryContainer{
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: #7D7C7C;
+    padding: 10px 0;
+}
+.EditCategoryContainer .editCategory form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    min-width: 1000px
+}
+.EditCategoryContainer .editCategory form input{
+    margin: 5px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid #2E97A7;
+    
+}
+.EditCategoryContainer .editCategory label{
+    font-size: 25px;
+}
+.EditCategoryContainer .editCategory form label{
+    margin: 5px;
+    height: 30px;
+    font-size: 15px;
+}
+.EditCategoryContainer .editCategory form input::placeholder{
+    padding: 0 10px;
+}
+.EditCategoryContainer .editCategory form .submitBtn{
+   background-color: #2E97A7;
+   border: none;
+   color: white;  
+   margin-top: 30px;
+}
+.EditCategoryContainer .editCategory form input:hover{
+    border-bottom: 2px solid #E55604;
+}
+.EditCategoryContainer .editCategory form .submitBtn:hover{
+    background-color: #E55604;
+    border: none;
+    color: white;  
+ }
+ .EditCategoryContainer .editCategory form .submitBtn:active{
+    transform: translateY(4px);
+ }
+
+ /*------------------------------Admin.Category.Edit style--------------------------------*/
+ .manageContentContainer{
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+ .manageContentContainer .ContentTable{
+    border-collapse: collapse;
+    min-width: 1200px;
+    margin: 25px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+ .manageContentContainer .ContentTable thead tr{
+    background-color: #2E97A7 ;
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    font-weight:bold;
+}
+ .manageContentContainer .ContentTable th, .ContentTable td{
+    padding: 12px 15px;
+}
+ .manageContentContainer .ContentTable tbody tr{
+    border-bottom: 1px solid #dddd;
+    font-size: 0.9rem;
+    color: black;
+}
+ .manageContentContainer .ContentTable tbody tr td a{
+    text-decoration: none;
+ }
+  .manageContentContainer .ContentTable tbody tr td a i{
+    color: #73777B;
+    font-size: 20px;
+    padding-left: 25px;
+ }
+   .manageContentContainer .ContentTable tbody tr td a i:hover{
+    color:#E55604;
+ }
+
+
+ .manageContentContainer .ContentTable tbody tr:hover{
+    color: #2E97A7;
+    cursor: pointer; 
+}
+ .manageContentContainer .ContentTable tbody tr:nth-of-type(even){
+    background-color: #EEEEEE;
+}
+ .manageContentContainer .ContentTable tbody tr:last-of-type{
+    border-bottom: 2px solid #2E97A7;
+}
+/* import google font - Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Libre+Baskerville&family=Nunito:wght@200&family=Poppins:wght@200;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+/* ------------------------  navigation style ----------------------------------*/
+/* navigation bar style */
+
+
+header .navigationBar{
+    background-color: #758D93;
+    display: flex;
+    flex-direction: row;
+    padding: 2px 2rem; /* rem = 16px*/
+    justify-content: space-between;
+    align-items: center;
+    color: #EEEEEE;
+}
+header .navigationBar .listItem{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 2rem;
+    font-size: 15px;
+}
+/* logo style */
+header .navigationBar .logoIntro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header .navigationBar .storeMoto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+}
+header .navigationBar .StoreName{
+    font-size: 15px;
+}
+header .navigationBar .logo{
+    width: 50px;
+}
+
+header .navigationBar .listItem,.navButtons{
+    font-size: 13px;
+}
+
+/* list item style */
+header .navigationBar a{
+    text-decoration: none;
+}
+header .navigationBar .listItem a{
+    color: #EEEEEE;
+}
+header .navigationBar .listItem a:hover{
+    color: #2E97A7;
+}
+header .navigationBar .listItem a:active{
+    color:#FFA559;
+}
+header .navigationBar .StoreName a, .navButtons a{
+    color: #EEEEEE;
+}
+
+/* button style */
+header .navigationBar .navButtons{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+header .navigationBar .navButtons .navigater:hover{
+    color: #FF6000;
+}
+header .navigationBar .navButtons .navigater:active{
+    transform: translateY(4px);
+}
+.log_out_btn{
+    padding: 10px;
+    color: #FFA559;
+}
+
+
+.listItem .hasDropdown .dropDownMenu {
+    display: none;
+    position: absolute;
+    background-color: #090909;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listItem .hasDropdown:hover .dropDownMenu {
+    display: block;
+}
+
+.listItem .dropDownMenu {
+    display: none;
+    position: absolute;
+    background-color: #090909;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    left: 4; 
+    top: 100%; 
+}
+.listItem .hasDropdown {
+    position: relative;
+}
+.listItem .dropDownMenu li {
+    padding: 10px;
+    list-style: none;
+}
+
+.listItem .dropDownMenu li a {
+    text-decoration: none;
+    color: #EEEEEE;
+    display: block;
+}
+
+.listItem .dropDownMenu li a:hover {
+    color: #FF6000;
+}
+
+/* -----------------------------------------------------------------------------------*/
+/*------------------------------Contributor Registration style--------------------------------*/
+
+body{
+    background-color: #CEE6F3;
+}
+
+.main_Registration_Loging_Container{
+    display: flex;
+    height: 100vh;
+    justify-content:center;
+    align-items: center;
+}
+
+.Registration_Loging_Container{
+    max-width: 700px;
+    width: 100%;
+    background:transparent;
+    padding: 25px 30px;
+    border-radius: 5px;
+    color:#61677A;
+}
+.Registration_Loging_Container .title{
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 40px;
+
+}
+.Registration_Loging_Container form .details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.Registration_Loging_Container form .details .input-box{
+    margin: 5px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+    
+
+}
+.Registration_Loging_Container .details .input-box input{
+    height: 45px;
+    width: 100%;
+    background-color: #B4B4B3;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    color: white;
+}
+.Registration_Loging_Container .details .input-box input:hover{
+    background-color: #61677A;
+}
+
+.Registration_Loging_Container .btn_style{
+    margin: 20px 0;
+    width: 100%;
+    height: 3rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #2E97A7;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.Registration_Loging_Container .btn_style:active{
+    transform: translateY(4px);
+}
+.faqBtn{
+    margin: 20px 50px;
+    align-items: center;
+}
+.faqBtn a{
+    background-color: #2E97A7;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    
+}
+.faqBtn a:hover{
+    background-color: #61677A;
+}
+
+

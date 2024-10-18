@@ -1,0 +1,112 @@
+/* import google font - Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Libre+Baskerville&family=Nunito:wght@200&family=Poppins:wght@200;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+    
+    padding: 10px;
+    background-image: url("../assert/BG_Image/BG_Stakeholders_Login.jpg");
+    background-size: cover; 
+}
+
+.main_Registration_Loging_Container{
+    display: flex;
+    height: 100vh;
+    justify-content:right;
+    align-items: center;
+}
+
+.Registration_Loging_Container{
+    max-width: 700px;
+    width: 100%;
+    background:transparent;
+    padding: 25px 30px;
+    border-radius: 5px;
+    color: #7D7C7C;
+}
+.Registration_Loging_Container .title{
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 30px;
+
+}
+.Registration_Loging_Container form .details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.Registration_Loging_Container form .details .input-box{
+    margin: 5px 0 12px 0;
+    width: calc(100% / 2 - 20px);
+    
+
+}
+.Registration_Loging_Container .details .input-box input,select{
+    height: 45px;
+    width: 100%;
+    background-color: #B4B4B3;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 5px;
+    color: white;
+}
+.Registration_Loging_Container .details .input-box input:hover{
+   
+    border: 3px solid #91C8E4;
+}
+
+.Registration_Loging_Container .btn_style{
+    margin: 20px 0;
+    width: 100%;
+    height: 3rem;
+    border-radius: 20px;
+    border: none;
+    background-color: #2E97A7;;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.Registration_Loging_Container .btn_style:active{
+    transform: translateY(4px);
+}
+.Registration_Loging_Container .loging_signup{
+    color: #7D7C7C;
+    padding: 0 25% ;
+}
+.Registration_Loging_Container .loging_signup a{
+    text-decoration: none;
+    color: #2E97A7;
+}
+.Registration_Loging_Container .loging_signup a:hover{
+    text-decoration: underline;
+}
+.Registration_Loging_Container.loging_signup a:active{
+    color: #B4B4B3;
+}
+.Registration_Loging_Container .error{
+    color: #db5a53;
+    margin: 5px 0;
+    font-size: 18px;
+    text-align:left
+}
+.Registration_Loging_Container .dropDown select{
+  width: 100%;
+  border-radius: 5px;
+  height: 40px;
+  background-color: #B4B4B3;
+  color: #7D7C7C;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+
+}

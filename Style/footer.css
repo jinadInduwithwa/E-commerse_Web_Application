@@ -1,0 +1,66 @@
+/* import google font - Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Libre+Baskerville&family=Nunito:wght@200&family=Poppins:wght@200;400;500;600&display=swap');
+
+
+/* ---------------------------------  footer style ----------------------------------*/
+.footer{
+    background-color: #272829;
+    padding: 50px 0;
+    box-sizing: border-box;
+    margin: 0 0;
+
+}
+.footer_container{
+    max-width: 100%;
+    margin: auto;
+}
+.footer_row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer_col{
+    width: 300px;
+    padding: 0 60px;
+}
+.footer_col h4{
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 400;
+    position: relative;
+}
+.footer_col ul{
+    list-style: none;
+}
+.footer_col ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 10px;
+    color:  #B2B2B2;
+    font-size: 14px;
+    transition: all 0.3s ease;
+
+}
+.footer_col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer_col .social_link a{
+    background-color: #474A56;
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+.footer_col .social_link a:hover{
+    background-color:#FFA559;
+    
+}
+.footer_col .social_link a i{
+    padding-top: 10px;
+    color: #ffffff;
+}

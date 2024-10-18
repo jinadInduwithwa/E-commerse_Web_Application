@@ -1,0 +1,129 @@
+/* import google font - Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Libre+Baskerville&family=Nunito:wght@200&family=Poppins:wght@200;400;500;600&display=swap');
+
+/* ---------------------------- contributor insert product ------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+body{
+    margin: 0;
+    background-color: white;
+}
+.ProductContainer{
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: #7D7C7C;
+    padding: 10px 0;
+}
+.ProductContainer .InsertProduct form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    min-width: 1000px
+}
+.ProductContainer .InsertProduct form input{
+    margin: 5px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid #2E97A7;
+    
+}
+.ProductContainer .InsertProduct label{
+    font-size: 25px;
+}
+.ProductContainer .InsertProduct form label{
+    margin: 5px;
+    height: 30px;
+    font-size: 15px;
+}
+.ProductContainer .InsertProduct select{
+    height: 45px;
+    width: 100%;
+    border-radius: 8px;
+    color: #7D7C7C;
+    border: 2px solid #2E97A7;
+}
+.ProductContainer .InsertProduct form input::placeholder{
+    padding: 0 10px;
+}
+.ProductContainer .InsertProduct form .submitBtn{
+   background-color: #2E97A7;
+   border: none;
+   color: white;  
+   margin-top: 30px;
+}
+.ProductContainer .InsertProduct form input:hover{
+    border-bottom: 2px solid #E55604;
+}
+.ProductContainer .InsertProduct form .submitBtn:hover{
+    background-color: #E55604;
+    border: none;
+    color: white;  
+ }
+ .ProductContainer .InsertProduct form .submitBtn:active{
+    transform: translateY(4px);
+ }
+
+
+/* ---------------------------- contributorview product ------------------------------------*/
+.viewProduct{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.viewProduct .ViewProductTable{
+    border-collapse: collapse;
+    min-width: 1200px;
+    margin: 25px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+}
+.viewProduct .ViewProductTable thead tr{
+    background-color: #2E97A7 ;
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    font-weight:bold;
+}
+.viewProduct .ViewProductTable th, .usersTable td{
+    padding: 12px 15px;
+}
+.viewProduct .ViewProductTable tbody tr{
+    border-bottom: 1px solid #dddd;
+    font-size: 0.9rem;
+    color: black;
+}
+.viewProduct .ViewProductTable tbody tr td{
+    padding: 20px 20px;
+}
+.viewProduct .ViewProductTable tbody tr td a{
+    text-decoration: none;
+}
+.viewProduct .ViewProductTable tbody tr td a i{
+    color: #7D7C7C;
+    text-align: center;
+    font-size: 20px;
+}
+.viewProduct .ViewProductTable tbody tr td a i:hover{
+    color: #E55604;
+}
+
+.viewProduct .ViewProductTable tbody tr:hover{
+    color: #2E97A7;
+    cursor: pointer; 
+}
+.viewProduct .ViewProductTable tbody tr:nth-of-type(even){
+    background-color: #EEEEEE;
+}
+.viewProduct .ViewProductTable tbody tr:last-of-type{
+    border-bottom: 2px solid #2E97A7;
+}

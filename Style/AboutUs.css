@@ -1,0 +1,94 @@
+/* import google font - Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Libre+Baskerville&family=Nunito:wght@200&family=Poppins:wght@200;400;500;600&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}body{
+    background-color: black;
+}
+.heor{
+    background-image: url("./assert/BG_Image/ternaryBG.jpg");
+    background-size:auto; 
+    overflow: hidden;
+
+}
+.heading h1{
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+}
+.container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+.hero-container{
+    width: 600px;
+    margin: 0px 25px;
+    animation:fadeInUp 2s ease ;
+}
+.hero-container h2{
+    font-size: 30px;
+    color: white;
+}
+.hero-container h6{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 30px;
+}
+.hero-container p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 40px;
+}
+.hero-image{
+    width: 600px;
+    margin: auto;
+    animation:fadeInUp 2s ease ;
+}
+.hero-image img{
+    width: 100%;
+    height: auto;
+}
+.About-members-container{
+    padding: 50px;
+}
+.About-members-container h4{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 25px;
+    color: white;
+}
+.About-members{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.About-members img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
