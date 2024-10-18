@@ -1,7 +1,7 @@
 <?php
 $serverName="localhost";
-$dbUserName="Grove";
-$dbPassword="1234";
+$dbUserName="root";
+$dbPassword="";
 $dbName="Grove";
 
 $conn = mysqli_connect($serverName, $dbUserName, $dbPassword, $dbName);
